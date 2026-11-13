@@ -1,0 +1,53 @@
+
+legends:
+    US_NLCD :       ["Urban_Built_Up", "Agricultural_Land",
+                     "Rangeland", "Forest_Land", "Water", "Wetland",
+                     "Tundra", "Snow_and_Ice"]
+
+colors:
+    Urban_Built_Up      :  "#85929E"
+    Agricultural_Land   :  "#F0B27A"
+    Rangeland           :  "#F1C40F"
+    Forest_Land         :  "#27AE60"
+    Water               :  "#2980B9"
+    Wetland             :  "#D4E6F1"
+    Tundra              :  "#EBDEF0"
+    Snow_and_Ice        :  "#F7F9F9"
+
+sources:
+    BDC :
+        collections :
+            SEGMENTATION-METRICS :
+                bands :
+                    AREA :
+                        missing_value : -9999
+                        minimum_value : 0
+                        maximum_value : 1000000
+                        scale_factor  : 1
+                        offset_value  : 0
+                        resolution    : 10
+                        band_name     : "AREA"
+                        data_type     : "FLT4S"
+                    PERIM :
+                        missing_value : -9999
+                        minimum_value : 0
+                        maximum_value : 1000000
+                        scale_factor  : 1
+                        offset_value  : 0
+                        resolution    : 10
+                        band_name     : "PERIM"
+                        data_type     : "FLT4S"
+                    SHAPE :
+                        missing_value : -9999
+                        minimum_value : 0
+                        maximum_value : 1000000
+                        scale_factor  : 1
+                        offset_value  : 0
+                        resolution    : 10
+                        band_name     : "SHAPE"
+                        data_type     : "FLT4S"
+                satellite       : "SENTINEL-2"
+                sensor          : "MSI"
+                grid_system     : "BDC-Small V2"
+                ext_tolerance   : 0.01
+

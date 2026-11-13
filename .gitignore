@@ -1,0 +1,21 @@
+# data (Zenodo)
+/roi/
+/samples/
+/maps/
+/segmentation/
+/models/
+
+# outputs of the scripts
+/data/
+/results/
+
+# R / Python
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
